@@ -26,6 +26,12 @@ ListNode *construct_link_list(const vector<int> &nums) {
 }
 
 /*
+ *
+ *                          time complexity   space complexity
+ * quick sort(recursively)  nlogn             1
+ * quick sort(circularly)   nlogn             logn
+ * merge sort               nlogn             logn
+ *
  * sort a linked list into ascending order
  * if we use merge sort recursively the space complexity will be o(logn) because of system stack
  * so we sort it circularly from bottom to top
