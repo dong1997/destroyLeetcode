@@ -10,7 +10,8 @@ using namespace std;
 /*
  * two pointers i initialize with 0 j initialize with n-1
  * when we encounter nums[i]==val
- * we swap the nums[i] with the nums[j] and dispose the last one this essentially reduce array's size by 1
+ * we swap the nums[i] with the nums[j]
+ * and dispose the last one this essentially reduce array's size by 1
  */
 int removeElement(vector<int> &nums, int val) {
     int n = nums.size();
