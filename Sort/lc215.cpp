@@ -23,6 +23,7 @@ using namespace std;
 /*
  * maintain a small top heap of size K
  * after loop, the top element in small top heap is actually the Kth largest element in the array
+ *
  */
 int findKthLargest(vector<int> &nums, int k) {
     priority_queue<int, vector<int>, greater<>> pq;
