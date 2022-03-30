@@ -22,6 +22,7 @@ using namespace std;
 
 /*
  * solution 2
+ *
  * maintain a small top heap of size K
  * after loop, the top element in small top heap is actually the Kth largest element in the array
  */
