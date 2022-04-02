@@ -8,6 +8,15 @@
 
 using namespace std;
 
+/*
+ * Convert the problem to find the kth smallest number in two sorted arrays,
+ *
+ * assume k/2 doesn't exceed the length of nums1,nums2
+ * if nums1[k/2] < nums2[k/2]
+ * then we have most k / 2 - 1 + k / 2 -1 = k -2 numbers smaller than nums1[k-2]
+ * so nums1[k/2] is largest number k - 1 at most
+ * so we can discard the first k/2 elements of the array
+ */
 int findKthNumber(const vector<int> &nums1, int i, const vector<int> &nums2, int j, int k) {
     int n = nums1.size(), m = nums2.size();
     if (n - i > m - j) return findKthNumber(nums2, j, nums1, i, k);
